@@ -1,0 +1,58 @@
+/* Grid Container */
+.grid {
+	display: grid;
+}
+
+.grid-template-columns {
+	grid-template-columns: 200px 200px;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.subgrid > div {
+	background: rgba(0,0,0,.3);
+}
+
+/* Estilos Gerais */
+.item {
+	margin: 5px;
+	background: #4DFFBE;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: black;
+	margin: 0px;
+	padding-bottom: 60px;
+  font-weight: 600;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
